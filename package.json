@@ -7,9 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "start:dev": "env-cmd -f .env.development dev",
-    "build:production": "env-cmd -f .env.production build",
-    "build:staging": "env-cmd -f .env.staging build",
+    "start:dev": "env-cmd -f .env.development vite",
+    "build:production": "env-cmd -f .env.production vite build",
+    "build:staging": "env-cmd -f .env.staging vite build",
     "deploy:staging": "export DEPLOY_ENV=staging && bash scripts/deploy.sh",
     "deploy:production": "export DEPLOY_ENV=production && bash scripts/deploy.sh"
   },

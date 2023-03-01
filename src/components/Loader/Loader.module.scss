@@ -1,0 +1,59 @@
+$line-width: 0.8rem;
+$line-height: 6rem;
+$line-radius: 2rem;
+$line-margin-h: 0.8rem;
+
+@keyframes shrink {
+  0% {
+    height: $line-height;
+  }
+
+  50% {
+    height: 0;
+  }
+
+  100% {
+    height: $line-height;
+  }
+}
+
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 3.2rem;
+}
+
+.loader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: $line-height;
+}
+
+.line {
+  margin: 0 $line-margin-h;
+  border-radius: $line-radius;
+  width: $line-width;
+  height: $line-height;
+  animation: shrink 800ms linear;
+  animation-iteration-count: infinite;
+
+  @for $i from 1 through 4 {
+    &:nth-child(#{$i}n) {
+      animation-delay: #{$i * 0.15}s;
+    }
+  }
+}
+
+.primary {
+  background-color: '#f2f8ff';
+}
+
+.light {
+  background-color: '#ffffff';
+}
