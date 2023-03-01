@@ -1,7 +1,7 @@
 import { Provider } from 'react-redux';
 
-import store from './store';
-import WithAuth from './components/WithAuth';
+import store from 'store';
+import WithAuth from 'components/WithAuth';
 
 import reactLogo from './assets/react.svg'
 import './App.css'

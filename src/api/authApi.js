@@ -1,4 +1,4 @@
-import isDevelopment from '../utils/isDevelopment';
+import isDevelopment from 'utils/isDevelopment';
 
 const authApi = {
   async generateJwt() {

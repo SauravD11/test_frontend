@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { AuthStore } from '@vectord/utils';
 
-import authApi from '../../api/authApi';
-import ErrorLayout from '../ErrorLayout';
-import Loader from '../Loader';
+import authApi from 'api/authApi';
+import ErrorLayout from 'components/ErrorLayout';
+import Loader from 'components/Loader';
 
 function WithAuth({ children }) {
   const [isLoggedIn, setLoggedIn] = useState(false);

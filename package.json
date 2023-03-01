@@ -14,8 +14,7 @@
     "deploy:production": "export DEPLOY_ENV=production && bash scripts/deploy.sh"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "@reduxjs/toolkit": "^1.9.0",
     "@vectord/components": "^1.0.0",
     "@vectord/hooks": "^0.0.7",
     "@vectord/icons": "^1.0.0",
@@ -26,10 +25,12 @@
     "http-proxy-middleware": "^2.0.6",
     "lodash": "^4.17.21",
     "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.4.3",
     "sass": "^1.55.0",
-    "@reduxjs/toolkit": "^1.9.0"
+    "vite-jsconfig-paths": "^2.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
