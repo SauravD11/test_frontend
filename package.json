@@ -1,0 +1,41 @@
+{
+  "name": "hire_test-frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start:dev": "env-cmd -f .env.development dev",
+    "build:production": "env-cmd -f .env.production build",
+    "build:staging": "env-cmd -f .env.staging build",
+    "deploy:staging": "export DEPLOY_ENV=staging && bash scripts/deploy.sh",
+    "deploy:production": "export DEPLOY_ENV=production && bash scripts/deploy.sh"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@vectord/components": "^1.0.0",
+    "@vectord/hooks": "^0.0.7",
+    "@vectord/icons": "^1.0.0",
+    "@vectord/styles": "^1.0.0",
+    "@vectord/utils": "^0.0.7",
+    "classnames": "^2.3.2",
+    "debounce-promise": "^3.1.2",
+    "http-proxy-middleware": "^2.0.6",
+    "lodash": "^4.17.21",
+    "prop-types": "^15.8.1",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.4.3",
+    "sass": "^1.55.0",
+    "@reduxjs/toolkit": "^1.9.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "vite": "^4.1.0",
+    "env-cmd": "^10.1.0"
+  }
+}
